@@ -1,3 +1,20 @@
 #세팅 들어가는 곳
 server:
   port: 8081
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring
+    username: root
+    password: password
+  thymeleaf:
+    cache: false
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    #sql log
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
