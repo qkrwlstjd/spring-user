@@ -31,4 +31,10 @@ public class MemberEntity {
         memberEntity.setMemberName(memberDTO.getMemberName());
         return memberEntity;
     }
+
+    public static MemberEntity toUpdateMemberEntity(MemberDTO memberDto){
+        MemberEntity memberEntity = toMemberEntity(memberDto);
+        memberEntity.setId(memberDto.getId());
+        return memberEntity;
+    }
 }
