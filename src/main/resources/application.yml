@@ -17,4 +17,6 @@ spring:
     show-sql: true
     open-in-view: false
     hibernate:
-      ddl-auto: create
+      #create : 테이블 다시 생성
+      #update : 테이블 업데이트(변경사항 반영)
+      ddl-auto: update
